@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'RxCNContactPickerViewController'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = 'Reactive CNContactPickerViewController in iOS.'
     s.description      = <<-DESC
     This is an Rx extension to use CNContactPickerViewController.
