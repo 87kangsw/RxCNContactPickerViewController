@@ -6,6 +6,8 @@
 //  Copyright © 2019 KanzDevelop. All rights reserved.
 //
 
+#if os(iOS)
+
 import ContactsUI
 import RxCocoa
 import RxSwift
@@ -70,3 +72,5 @@ extension Selector {
     static let didSelectContactProperty = #selector(CNContactPickerDelegate.contactPicker(_:didSelect:) as ((CNContactPickerDelegate) -> (CNContactPickerViewController, CNContactProperty) -> Void)?)
     static let didSelectContacts = #selector(CNContactPickerDelegate.contactPicker(_:didSelect:) as ((CNContactPickerDelegate) -> (CNContactPickerViewController, [CNContact]) -> Void)?)
 }
+
+#endif
