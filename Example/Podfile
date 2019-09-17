@@ -1,0 +1,11 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'RxCNContactPickerViewController_Example' do
+  pod 'RxCNContactPickerViewController', :path => '../'
+
+  target 'RxCNContactPickerViewController_Tests' do
+    inherit! :search_paths
+
+  end
+end
